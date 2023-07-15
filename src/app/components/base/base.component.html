@@ -1,0 +1,19 @@
+<ng-container>
+    <div [className]="toggle ? 'winboard' : 'board'">
+        <div [className]="'message'" *ngIf="lose.length !== 0">
+            <div *ngIf='toggle' >
+                <p>ВЫ УЧАСТНИК ПОД НОМЕРОМ {{lose.length+1}} И ВЫ ВЫИГРАЛИ</p>
+            </div>
+
+            <div *ngIf='winID === 0'>
+                <p>Вы участник под номером {{lose.length}} и вы проиграли</p>
+            </div>
+
+            <div *ngIf='winWas.length > 0' >
+                <p >Сегодня уже был победитель, его номер {{winID}} (ваш номер {{lose.length+1}})</p>
+            </div>
+        </div>
+        <button (click)="getConsole()">Принять участие</button>
+    </div>
+</ng-container>
+

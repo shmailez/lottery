@@ -1,0 +1,51 @@
+.board {
+    display: flex;
+    justify-content: center;
+    // margin-top: 20%;
+    color: aliceblue;
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+.message {
+    margin-top: 10%;
+}
+
+button {
+    background-color: rgb(254, 1, 1);
+    position: absolute;
+    color: rgb(254, 242, 227);
+    width: 150px;
+    height: 50px;
+    font-size: large;
+    border: none;
+    border-radius: 10px;
+    right: 50%;
+    top: 30%;
+    transform: translate(50%, 50%);
+}
+
+.winboard {
+	background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 15s ease infinite;
+	height: 100vh;
+    display: flex;
+    justify-content: center;
+    // margin-top: 20%;
+    color: aliceblue;
+    font-size: large;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
